@@ -1,0 +1,16 @@
+{
+  "network": {
+    "servers": [ "<%= node['logstash-forward']['server'] %>" ],
+    "timeout": 15,
+    "ssl ca": "/etc/pki/tls/certs/logstash-forwarder.crt"
+  },
+  "files": [
+  {
+      "paths": [
+		"/var/log/nginx/*.log",
+		"/srv/www/edukflix_*/shared/log/*.log"
+       ],
+      "fields": { "type": "<%= node['logstash-forward']['type'] %>" }
+    }
+   ]
+}
