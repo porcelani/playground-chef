@@ -13,7 +13,16 @@ verifier:
   name: inspec
 
 platforms:
-  - name: centos-7.2
+  - name: oracle-7.0
+    driver:
+      box: oraclelinux-7-x86_64
+      box_url: http://cloud.terry.im/vagrant/oraclelinux-7-x86_64.box
+      network:
+        - ["private_network", {type: "dhcp"}]
+      customize:
+        memory: 3096
+        cpus: 2
+
 
 suites:
   - name: default

@@ -15,9 +15,6 @@ verifier:
 
 platforms:
   - name: centos-7.2
-    driver:
-      network:
-      - ["private_network", {ip: "192.168.34.33"}]
 
 suites:
   - name: default
