@@ -20,7 +20,7 @@ platforms:
       network:
         - ["private_network", {type: "dhcp"}]
       customize:
-        memory: 3096
+        memory: 2048
         cpus: 2
 
 

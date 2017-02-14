@@ -1,4 +1,6 @@
 
 .idea/
-/.kitchen/
-/playground-chef.iml
+.kitchen/
+.delivery/
+*.iml
+*.lock
